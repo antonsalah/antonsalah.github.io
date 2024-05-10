@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Anton Salah">
 
-    <title>Home - Simple Blog Template</title>
+    <title>Anton Salah's Capstone Project</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,20 +39,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Simple Blog</a>
+          <a class="navbar-brand" href="index.html">Capstone Project</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="login.html">Login</a>
-            </li>
-            <li>
-              <a href="signup.html">Sign up</a>
-            </li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -60,65 +51,62 @@
       <!-- /.container -->
     </nav>
 
+
     <!-- Page Content -->
     <div class="container">
 
       <div class="row">
 
-        <!-- Blog Entries Column -->
-        <div class="col-md-12">
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-12">
 
-          <!-- First Blog Post -->
-          <h2 class="post-title">
-            <a href="post.html">Blog Post Title</a>
-          </h2>
+          <!-- Blog Post -->
+
+          <!-- Title -->
+          <h1 class="post-title">NASA APOD Website</h1>
+
+          <!-- Author -->
           <p class="lead">
-            by Author
+            by Anton Salah
           </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-          <a class="btn btn-default" href="post.html">Read More</a>
 
           <hr>
 
-          <!-- Second Blog Post -->
-          <h2 class="post-title">
-            <a href="post.html">Blog Post Title</a>
-          </h2>
-          <p class="lead">
-            by Author
-          </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
-          <a class="btn btn-default" href="post.html">Read More</a>
+          <!-- Date/Time -->
+          <p><span class="glyphicon glyphicon-time"></span> Posted on May 5, 2024</p>
 
           <hr>
 
-          <!-- Third Blog Post -->
-          <h2 class="post-title">
-            <a href="post.html">Blog Post Title</a>
-          </h2>
-          <p class="lead">
-            by Author
-          </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
-          <a class="btn btn-default" href="post.html">Read More</a>
-
-          <hr>
-
-          <!-- Pager -->
-          <ul class="pager">
-            <li class="previous">
-              <a href="#">Prev</a>
-            </li>
-            <li class="next">
-              <a href="#">Next</a>
-            </li>
+          <!-- Post Content -->
+          <p>The NASA APOD Website is a dynamic web application designed to explore and utilize: front-end design, database caching, real-time data fetching from an external API, and cloud hosting. With the goal of the project to develop through an entire tech stack while also creating a fun and educational application. This website provides users with the ability to view astronomical images along with detailed explanations, based on a user-selected date. Key features and technologies include:</p>
+          <ul>
+            <li>Database Caching: implementing SQLite to store data locally, this reduces dependency on API calls and allows for the program to improve as more people use the application.</li>
+            <li>API Integration: Leveraging the free NASA Astrological Photo of the Day (APOD) API to dynamically retrieve the images and descriptions based on the user-selected dates. This integration demonstrates effective real-time data utilization within the application.</li>
+            <li>Cloud Hosting: Utilizing AWS Elastic Beanstalk Service allows the application to leverage auto-scaling capabilities and manages high traffic loads efficiently.</li>
           </ul>
 
-        </div>
+          <centre><img src="mainImg.png" width="600px" height="350px"></centre> 
 
+          <p><br>The NASA APOD Website successfully integrates technologies across the software stack to deliver a seamless user experience. The application efficiently checks the local SQLite database for previously requested images and data, reducing API calls and load times. When new data is fetched from the NASA API, it is stored locally, ensuring quicker access on subsequent requests. The interface provides a user-friendly environment where visitors can easily select dates and retrieve the desired astronomical images and descriptions. Additionally, the deployment on AWS Elastic Beanstalk enhances the application's scalability, allowing it to adapt resource allocation dynamically in response to varying traffic loads without the need for manual intervention.</p>
+
+          <p>The NASA APOD Website project demonstrates a robust application of web development principles and cloud infrastructure to deliver a functional and educational tool. By leveraging the NASA APOD API, this project not only facilitates access to astronomical data but also encourages public interest and education in astronomy. The project showcased the potential of integrating modern web technologies with public APIs to create informative and interactive experiences. This project can be further expanded by either extending functionality into other NASA Open APIs or by improving the core functionality already established with features such as server scripting, improved UI features, or more robust architectures.</p>
+
+          <h2>Key Components</h2>
+
+          <p>The project can be broken down into three essential components:
+            <ul>
+            <li>Front-end: The front end utilizes HTML, CSS and Javascript in order to aesthetically display the image and related information</li>
+            
+            <li>Back-end: The webserver was written using Node.js to handle server-side logic, processing the API calls, and querying the database. Along with Express.js to handle page routing.</li>
+            
+            <li>Database: The database uses SQLite to store the date, title, description, and path to the image which is downloaded directly onto disk memory.</li>
+            </ul>
+            <centre><img src="codeImg.png" width="600" height="350"></centre> 
+            </p>
+
+          <hr>
+
+        </div>
       </div>
       <!-- /.row -->
 
@@ -130,14 +118,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p>Copyright &copy; 2024</p>
           </div>
           <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
       </div>
     </footer>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
